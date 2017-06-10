@@ -1,0 +1,25 @@
+#cource_selector{
+    text-align: center;
+    background:#369;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#cource_selector select{
+    width: 200px;
+    display: inline-block;
+}
+#week_schedule table td.tg-031e{
+    width:200px;
+}
+@media screen and  (max-width: 450px) {
+ .slider-testimonials{
+     overflow-x: scroll;
+ }
+.widget-inner{
+    font-size: 70%;
+}
+#cource_selector.form-control{
+    width: initial;
+}
+}

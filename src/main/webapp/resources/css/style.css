@@ -1,0 +1,454 @@
+/*--
+	Theme Name: Universe
+	Theme URI: xxx
+	Author: Esmet Hajrizi
+	Author URI: www.esmeth.com
+	Description: College Education Responsive Template
+	Version: 1.0
+	License URI: http://
+	Tags:
+--*/
+
+@import "misc.css";
+@import "main.css";
+@import "color-scheme.css";
+@import "responsive.css";
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.site-content {
+    flex: 1 0 auto;
+}
+.site-footer {
+    flex: 0 0 auto;
+}
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: roboto;
+}
+
+.loginmodal-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.prof-margin{
+    margin-left: 28%;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+    height: 44px;
+    font-size: 16px;
+    width: 100% !important;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    /* border-radius: 2px; */
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+    border: 1px solid #b9b9b9;
+    border-top: 1px solid #a0a0a0;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    height: 36px;
+    padding: 0 8px;
+    /* border-radius: 3px; */
+    /* -webkit-user-select: none;
+      user-select: none; */
+}
+
+.loginmodal-submit {
+    /* border: 1px solid #3079ed; */
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #4d90fe;
+    padding: 17px 0px;
+    font-family: roboto;
+    font-size: 14px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+    /* border: 1px solid #2f5bb7; */
+    border: 0px;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #357ae8;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity ease 0.5s;
+}
+a{
+    cursor: pointer;
+}
+.login-help{
+    font-size: 12px;
+}
+.login_button{
+    width: 20%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    border: 0px;
+    color: #fff;
+    margin: 0 auto;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #4d90fe;
+    padding: 9px 0px;
+    font-family: roboto;
+    font-size: 14px;
+}
+.small-links form{
+    display:inline;
+}
+.small-links input[type=submit]{
+    background: none;
+    color: #8ab5d6;
+}
+/*timetable start*/
+.schedule_top_buttons{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.schedule_button{
+    margin: 0 20px;
+}
+.schedule_type_buttons{
+    text-align: center;
+    margin: auto;
+}
+
+.schedule_edit_button {
+    text-align: center;
+    margin: auto;
+}
+
+.schedule_edit_button_after{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.week_type {
+    margin: 0 0 3% 0;
+    text-align: center;
+}
+
+
+.schedule_week{
+    margin: 15px;
+    overflow: scroll;
+    height: 800px;
+}
+
+.schedule_day{
+    margin: 15px;
+    overflow: scroll;
+}
+
+.schedule_full{
+    margin: 15px;
+    overflow: scroll;
+    height: 800px;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-color:#999;
+}
+.tg td{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#999;
+    color:#444;
+    background-color:#F7FDFA;
+}
+.tg th{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#999;
+    color:#fff;
+    background-color:#26ADE4;
+}
+.tg .tg-lqy6{
+    text-align:right;
+    vertical-align:top
+}
+.tg .tg-yw4l{
+    vertical-align:top
+}
+
+#exam_button{
+    margin-top: 20px;
+}
+option{
+    color: #004884;
+
+}
+th{
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #004884;
+    border-radius: 0;
+}
+@media screen and  (max-width: 450px) {
+    .slider-testimonials{
+        overflow-x: scroll;
+    }
+    .widget-inner{
+        font-size: 70%;
+    }
+}
+
+/*timetable end*/
+/*rating start*/
+.rating {
+    word-break:normal;
+    overflow:auto;
+    max-width:100%;
+    align: center;
+    text-align: center;
+}
+.rating td{
+    word-break:normal;
+    overflow:auto;
+}
+.rating .rating-left{
+    text-align: left;
+    width: 30%;
+}
+.topkurs {
+    background: #004884;
+}
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+/*rating end*/
+/*plan start*/
+th.rotate {
+    /* Something you can count on */
+    height: 80px;
+    white-space: nowrap;
+}
+th.rotate > div {
+    transform: rotate(315deg);
+    width: 30px;
+}
+th.rotate > div > span {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+/*plan end*/
+/*exams start*/
+#week_schedule table td.tg-031e{
+    width:200px;
+}
+@media screen and  (max-width: 450px) {
+    .slider-testimonials{
+        overflow-x: scroll;
+    }
+    .widget-inner{
+        font-size: 70%;
+    }
+}
+/*exams end*/
+/*spinner start*/
+.sk-circle {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.sk-circle .sk-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sk-circle .sk-child:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+    animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+.sk-circle .sk-circle2 {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg); }
+.sk-circle .sk-circle3 {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg); }
+.sk-circle .sk-circle4 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+.sk-circle .sk-circle5 {
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg); }
+.sk-circle .sk-circle6 {
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg); }
+.sk-circle .sk-circle7 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+.sk-circle .sk-circle8 {
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg); }
+.sk-circle .sk-circle9 {
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg); }
+.sk-circle .sk-circle10 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); }
+.sk-circle .sk-circle11 {
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg); }
+.sk-circle .sk-circle12 {
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg); }
+.sk-circle .sk-circle2:before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s; }
+.sk-circle .sk-circle3:before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s; }
+.sk-circle .sk-circle4:before {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s; }
+.sk-circle .sk-circle5:before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s; }
+.sk-circle .sk-circle6:before {
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s; }
+.sk-circle .sk-circle7:before {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s; }
+.sk-circle .sk-circle8:before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s; }
+.sk-circle .sk-circle9:before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s; }
+.sk-circle .sk-circle10:before {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s; }
+.sk-circle .sk-circle11:before {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s; }
+.sk-circle .sk-circle12:before {
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleBounceDelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+      }
+}
+
+@keyframes sk-circleBounceDelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+      }
+}
+/*spinner end*/

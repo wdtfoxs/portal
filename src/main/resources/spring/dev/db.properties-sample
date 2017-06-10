@@ -1,0 +1,5 @@
+################### DataSource Configuration ##########################
+db.driver = org.postgresql.Driver
+db.username = username
+db.password = password
+db.url = jdbc:postgresql://localhost:5432/database
